@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ML Crop Prediction App</title>
+    <style>
+    h1 {
+        color: rgb(0, 0, 0);
+        margin-left: 20px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        font-size: 2.7em;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .btn-class {
+        background-color: rgb(200, 0, 255);
+        color: rgb(0, 0, 0);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        width: 200px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: x-large;
+        ;
+    }
+
+    body {
+        background-image:  url("Minecraft.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: lightblue;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #predic {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 2.5em;
+        margin-top: 20px;
+    }
+
+    input[type="text"] {
+        width: 700px;
+        padding: 12px;
+        margin: 3px 0;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        box-shadow:  2px 4px 4px rgba(0, 0, 0, 0.93);
+        margin-bottom: 10px;
+        color: rgb(15, 36, 17);
+    }
+
+</style>
+</head>
+
+<body>
+<div class="login">
+    <h1>ML Crop Prediction Application</h1>
+    <form action="{{ url_for('predict')}}", method="post">
+        <input type="text" name = "Nitrogen" id="Nitrogen" placeholder="Nitrogen" required = "required"><br>
+        <input type="text" name = "Phosphorus" id="Phosphorus" placeholder="Phosphorus" required = "required"><br>
+        <input type="text" name = "Potassium" id="Potassium" placeholder="Potassium" required="required"><br>
+        <input type="text" name = "Temperature" id="Temperature" placeholder="Temperature" required ="required"><br>
+        <input type="text" name = "Humidity" id="Humidity" placeholder="Humidity" required = "required"><br>
+        <input type="text" name = "Ph" id="Ph" placeholder="Ph" required = "required"><br>
+        <input type="text" name = "Rainfall" id="Rainfall" placeholder="Rainfall" required ="required"><br>
+        <button type="submit" class="btn-class"> Predict </button>
+    </form>
+
+    <h1 id="predic">
+     {{ prediction_text }}   
+    </h1>
+
+</div>
+
+
+</body>
+
+</html>
+

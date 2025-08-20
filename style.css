@@ -1,0 +1,49 @@
+h1 {
+color: rgb(0, 0, 0);
+margin-left: 20px;
+font-family: Arial, sans-serif;
+text-align: center;
+font-size: 2.7em;
+margin-top: 5px;
+}
+
+.btn-class {
+background-color: rgb(200, 0, 255);
+color: rgb(0, 0, 0);
+padding-top: 10px;
+padding-bottom: 10px;
+margin-top: 20px;
+width: 200px;
+text-align: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: x-large;
+;
+}
+
+body {
+background-image:  url("one_piece_farm.jpeg");
+background-size: cover;
+background-color: lightblue;
+font-family: Arial, sans-serif;
+text-align: center;
+padding: 20px;
+}
+
+#predic {
+color: rgb(0, 0, 0);
+text-align: center;
+font-family: Arial, sans-serif;
+font-size: 2.5em;
+margin-top: 20px;
+}
+
+input[type="text"] {
+width: 700px;
+padding: 12px;
+margin: 3px 0;
+border: 1px solid #000000;
+border-radius: 4px;
+box-shadow:  2px 4px 4px rgba(0, 0, 0, 0.93);
+margin-bottom: 10px;
+color: rgb(15, 36, 17);
+}
